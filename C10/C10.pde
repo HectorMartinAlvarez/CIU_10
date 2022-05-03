@@ -1,7 +1,3 @@
-import gifAnimation.*;
-
-GifMaker gifExport;
-
 PShader shader;
 
 float time = 0.0;
@@ -16,8 +12,6 @@ void setup() {
   shader = loadShader("shader.glsl");
   shader.set("X", X);
   shader.set("Y", Y);
-  gifExport = new GifMaker(this, "animation.gif");
-  gifExport.setRepeat(0); // make it an "endless" animation
 }
 
 void draw() {
@@ -27,7 +21,5 @@ void draw() {
   translate(width/2, height/2);
   rotateY(r+=0.01);
   box(500);
-  time += v;
-  gifExport.addFrame();
-  if (frameCount == 180) gifExport.finish();  
+  time += v; 
 }
