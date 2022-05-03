@@ -16,9 +16,8 @@ void setup() {
   shader = loadShader("shader.glsl");
   shader.set("X", X);
   shader.set("Y", Y);
-  gifExport = new GifMaker(this, "spin rect sine growth.gif");
+  gifExport = new GifMaker(this, "animation.gif");
   gifExport.setRepeat(0); // make it an "endless" animation
-  gifExport.setTransparent(255); // make white the transparent color -- match browser bg color
 }
 
 void draw() {
@@ -30,5 +29,5 @@ void draw() {
   box(500);
   time += v;
   gifExport.addFrame();
-  if (frameCount == 120) gifExport.finish();  
+  if (frameCount == 180) gifExport.finish();  
 }
