@@ -22,4 +22,4 @@ El proyecto ha sido desarrollado empleando 2 ficheros:
   - [The Book of Shaders](https://thebookofshaders.com/?lan=es)
   - [Domain warping](https://iquilezles.org/articles/warp/) por Iñigo Quilez
 
-![No Gif Here :(]()
+![No Gif Here :(](https://github.com/HectorMartinAlvarez/CIU_10/blob/main/animation.gif)
